@@ -62,6 +62,10 @@ app.get('/api', function(req, res) {
   res.json(messages)
 })
 
+app.get('/api/config', function(req, res) {
+  res.json(process.env)
+})
+
 app.post('/api', function(req, res) {
   messages.push(req.body)
   res.status(201).json(req.body)
