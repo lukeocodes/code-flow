@@ -1,5 +1,5 @@
 {
-    "name": "Code Flow: SMS Demo App",
+    "name": "Nexmo Demo: SMS Code Flow",
     "description": "This app highlights the code that runs as an SMS is received.",
     "keywords": [
       "sms",
@@ -8,6 +8,9 @@
     "website": "https://github.com/lukeocodes/code-flow",
     "repository": "https://github.com/lukeocodes/code-flow",
     "logo": "https://raw.githubusercontent.com/lukeocodes/code-flow/master/client/src/logo.svg",
+    "scripts": {
+      "postdeploy": "npm i"
+    },
     "env": {
       "NEXMO_NUMBER": {
         "description": "A number obtained from https://dashboard.nexmo.com/buy-numbers, don't forget to configure your callback to https://app-name.herokuapp.com/api",
