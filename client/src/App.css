@@ -1,0 +1,26 @@
+.App-header {
+  background-color: #282c34;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.Row {
+  display: flex;
+}
+
+.Column {
+  flex: 50%;
+}
+
+.Img-example-webhook {
+  padding-top: 50px;
+  width: 50vw;
+}
+
+.Img-example-webhook:hover {
+  transform: scale(1.1);
+  -webkit-filter: drop-shadow(0 0 10px #00a6ff);
+  filter: drop-shadow(0 0 10px #00a6ff);
+}
