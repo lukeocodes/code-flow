@@ -8,9 +8,6 @@
     "website": "https://github.com/lukeocodes/code-flow",
     "repository": "https://github.com/lukeocodes/code-flow",
     "logo": "https://pbs.twimg.com/profile_images/734764715277221888/E6jYBjb1_400x400.jpg",
-    "scripts": {
-      "postdeploy": "npm i"
-    },
     "env": {
       "NEXMO_NUMBER": {
         "description": "A number obtained from https://dashboard.nexmo.com/buy-numbers, don't forget to configure your callback to https://app-name.herokuapp.com/api",
