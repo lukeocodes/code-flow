@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './App.css'
+import logo from './logo.svg';
 import webhookImg from './webhook.png'
 
 class App extends Component {
@@ -44,22 +45,26 @@ class App extends Component {
     this.fetchData()
     this.interval = setInterval(() => this.fetchData(), 5000)
   }
+
   componentWillUnmount() {
     clearInterval(this.interval)
   }
 
   render() {
+    console.log(this.props)
+    const { NEXMO_NUMBER } = this.props
+    console.log(NEXMO_NUMBER)
     const { error, isLoaded, items } = this.state
     return (
       <div className="App">
         <header className="App-header">
-        Nexmo
+          <img src={logo} className="App-logo" alt="logo" />
         </header>
-        <div class="Row">
-          <div class="Column Column--examples">
-              <img class="Img-example-webhook" src={webhookImg} alt="Example Webhook Endpoint" />
+        <div className="Main">
+          <div className="Main--Column Main--Column--examples">
+              <img className="Img-example-webhook" src={webhookImg} alt="Example Webhook Endpoint" />
           </div>
-          <div class="Column">
+          <div className="Main--Column">
           {!isLoaded &&
             <h2>Loading</h2>
           }
@@ -80,6 +85,9 @@ class App extends Component {
           }
           </div>
         </div>
+        <header className="App-footer">
+          Message {NEXMO_NUMBER} and see the result!
+        </header>
       </div>
     )
   }

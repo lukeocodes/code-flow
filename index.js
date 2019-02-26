@@ -43,27 +43,18 @@ const onError = (error) => {
   }
 }
 
-const messages = [
-  {
-    "msisdn": "447508741510",
-    "to": "447520632650",
-    "messageId": "16000002682300A6",
-    "text": "Test message",
-    "type": "text",
-    "keyword": "TEST",
-    "message-timestamp": "2019-02-25 14:56:58"
-  }
-]
+const messages = []
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')))
 
-app.get('/api', function(req, res) {
-  res.json(messages)
-})
 
 app.get('/api/config', function(req, res) {
-  res.json(process.env)
+  res.json({ NEXMO_NUMBER: process.env.NEXMO_NUMBER })
+})
+
+app.get('/api', function(req, res) {
+  res.json(messages)
 })
 
 app.post('/api', function(req, res) {
