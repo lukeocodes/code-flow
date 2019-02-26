@@ -7,7 +7,7 @@
     "dev:client": "cd client/ && npm start",
     "dev:server": "DEBUG=code-flow:* nodemon index.js",
     "dev": "concurrently --kill-others-on-fail 'npm run dev:server' 'npm run dev:client'",
-    "start": "PORT=3000 node index.js && cd client/ && npm run build"
+    "start": "node index.js && cd client/ && npm run build"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
