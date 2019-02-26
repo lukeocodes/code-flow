@@ -5,12 +5,12 @@
       "sms",
       "nexmo"
     ],
-    "website": "https://github.com/lukeocodes/code-flow",
-    "repository": "https://github.com/lukeocodes/code-flow",
+    "website": "https://developer.nexmo.com",
+    "repository": "https://github.com/lukeocodes/nexmo-demo-sms-code-flow",
     "logo": "https://pbs.twimg.com/profile_images/734764715277221888/E6jYBjb1_400x400.jpg",
     "env": {
       "NEXMO_NUMBER": {
-        "description": "A number obtained from https://dashboard.nexmo.com/buy-numbers, don't forget to configure your callback to https://app-name.herokuapp.com/api",
+        "description": "A number obtained from https://dashboard.nexmo.com/buy-numbers, don't forget to configure your callback to https://<your-app-name>.herokuapp.com/api",
         "required": true
       }
     }
