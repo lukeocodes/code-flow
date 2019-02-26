@@ -10,7 +10,7 @@
 
 ## Get a Nexmo Number
 
-You can [buy a Nexmo number here][1]. This is required for deployment is testing locally.
+You can [buy a Nexmo number here][1]. This is required for deployment and testing locally.
 
 ## Run Locally
 
