@@ -14,7 +14,13 @@ You can [buy a Nexmo number here][1]. This is required for deployment is testing
 
 ## Run Locally
 
-`NEXMO_NUMBER=<your-nexmo-number> npm run dev` will start both the client and server. You can access the app at [localhost:3000][4]
+To run locally, run this command.
+
+```bash
+NEXMO_NUMBER=<your-nexmo-number> npm run dev
+``` 
+
+This will start both the client and server. You can access the app at [localhost:3000][4]
 
 ## Deploy Application
 
@@ -24,7 +30,7 @@ You can deploy to your own Heroku instance using this button.
 
 ## Configure the Nexmo Number Callback
 
-The callback endpoint is expecting POST-JSON which can be set in the [account level settings][3]. Configure the webhook to `https://<your-app-name>.herokuapp.com/api`.
+The callback endpoint is expecting POST-JSON which can be set in the [account level settings][3]. Configure the webhook for your number to go to `https://<your-app-name>.herokuapp.com/api`.
 
 [1]: <https://dashboard.nexmo.com/your-numbers>
 [2]: <https://heroku.com/deploy>
