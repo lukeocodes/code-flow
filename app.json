@@ -7,7 +7,7 @@
     ],
     "website": "https://github.com/lukeocodes/code-flow",
     "repository": "https://github.com/lukeocodes/code-flow",
-    "logo": "https://raw.githubusercontent.com/lukeocodes/code-flow/master/client/src/logo.svg",
+    "logo": "https://pbs.twimg.com/profile_images/734764715277221888/E6jYBjb1_400x400.jpg",
     "scripts": {
       "postdeploy": "npm i"
     },
